@@ -27,13 +27,29 @@
       max-height: 100%;
       }
 
-      .div 
+      div 
       {
       background-color: #9195FF;
       }
+
+      .button 
+      {
+      background-color: white;
+      border: none;
+      color: black;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      border-radius: 30px;
+      font-family: 'Montserrat';
+      font-size: 26px;
+      }
     </style>
         
-    <img class="fit" src="part1.png">
+    <img class="fit" src="commu1.1.png">
 
     <script type="text/javascript">
       var count = 0;
@@ -42,14 +58,13 @@
         
       btn.onclick = function () {
           count++;
+          print(count)
           disp.innerHTML = count;
       }
     </script>
-    <div class="aligncenter">
-      <button action="https://mailchi.mp/f3c5ad49c46a/482t9ifuwl" id="btn">Rejoindre la communauté</button>
-      <p>
-        Personnes inscrites a la newsletter : <span id="display"></span>
-      </p>
+    <div>
+      <div class="col-lg-12 text-center">
+          <button class="button" onclick="window.location.href='https://mailchi.mp/f3c5ad49c46a/482t9ifuwl';" id="btn">Rejoindre la communauté</button>
     </div>
     <img class="fit" src="part2.png">
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>

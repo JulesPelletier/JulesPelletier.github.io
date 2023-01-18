@@ -27,7 +27,23 @@
       }
     </style>
         
-    <img class="fit" src="commu.png">
+    <img class="fit" src="part1.1.png">
+
+    <script type="text/javascript">
+      var count = 0;
+      var btn = document.getElementById("btn");
+      var disp = document.getElementById("display");
+        
+      btn.onclick = function () {
+          count++;
+          disp.innerHTML = count;
+      }
+    </script>
+    <button id="btn">Rejoindre la communauté</button>
+    <p>
+      Personnes inscrites a la newsletter : <span id="display"></span>
+    </p>
+    <img class="fit" src="part1.2.png">
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
 <!-- javascript
     ================================================== -->
